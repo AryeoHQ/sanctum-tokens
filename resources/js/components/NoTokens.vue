@@ -16,9 +16,9 @@
     <h3 class="text-base text-80 font-normal mb-6 mt-3">
       {{ __("No Tokens For User.") }}
     </h3>
-    <DefaultButton @click="$emit('showCreateTokenModal')">
+    <InertiaButton @click="$emit('showCreateTokenModal')">
       {{ __("Create Token") }}
-    </DefaultButton>
+    </InertiaButton>
   </div>
 </template>
 

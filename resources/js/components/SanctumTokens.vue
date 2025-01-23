@@ -2,9 +2,9 @@
   <div class="relative">
     <Heading :level="1" class="mb-3 flex items-center justify-between">
       <p>{{ __("Personal Access Tokens") }}</p>
-      <DefaultButton @click="showCreateTokenModal = true">
+      <InertiaButton @click="showCreateTokenModal = true">
         {{ __("Create Token") }}
-      </DefaultButton>
+      </InertiaButton>
     </Heading>
     <Card>
       <div
