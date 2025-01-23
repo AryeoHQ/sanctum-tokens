@@ -62,7 +62,7 @@
             ref="confirmButton"
             :processing="false"
             :disabled="false"
-            component="DefaultButton"
+            component="InertiaButton"
             type="submit"
           >
             {{ __("Create New Token") }}

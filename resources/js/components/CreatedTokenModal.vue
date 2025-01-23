@@ -41,9 +41,9 @@
 
       <ModalFooter>
         <div class="ml-auto">
-          <DefaultButton type="button" @click.prevent="handleConfirmed">
+          <InertiaButton type="button" @click.prevent="handleConfirmed">
             {{ __("Confirm") }}
-          </DefaultButton>
+          </InertiaButton>
         </div>
       </ModalFooter>
     </div>
