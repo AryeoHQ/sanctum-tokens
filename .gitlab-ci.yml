@@ -32,12 +32,17 @@ workflow:
     - if: $CI_COMMIT_BRANCH
     - if: $CI_COMMIT_TAG
 
-# Runs without installing dependencies, which would need Nova credentials.
+# Runs without installing dependencies, which would need Nova credentials. A job without
+# rules is left out of merge request pipelines, so list every pipeline it should run in.
 validate:
   stage: test
   image: $PHP_IMAGE
   script:
     - composer validate --strict --no-check-lock
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG
 
 package:
   stage: package
