@@ -1,5 +1,5 @@
 {
-  "name": "jeffbeltran/sanctum-tokens",
+  "name": "aryeo/sanctum-tokens",
   "description": "A Laravel Nova resource tool for sanctum tokens.",
   "keywords": [
     "laravel",
@@ -7,6 +7,9 @@
     "sanctum"
   ],
   "license": "MIT",
+  "replace": {
+    "jeffbeltran/sanctum-tokens": "self.version"
+  },
   "require": {
     "php": "^7.3|^8.0",
     "laravel/nova": "^4.0|^5.0"
